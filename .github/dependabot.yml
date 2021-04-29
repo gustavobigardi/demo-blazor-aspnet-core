@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: America/Sao_Paulo
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: Newtonsoft.Json
+    versions:
+    - 12.0.3
